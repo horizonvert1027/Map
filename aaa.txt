@@ -71,13 +71,8 @@ https://github.com/itzpradip/react-native-firebase-social-app.git
 https://github.com/cometchat-pro/react-native-chat-app.git
 
 
-
 https://github.com/ReactNativeNews/React-Native-Apps
-
-https://github.com/gitpoint/git-point.git ---------
-
+https://github.com/gitpoint/git-point.git --------
 https://github.com/akveo/kittenTricks.git ---------
-
 https://github.com/TernopilJS/AskApikoMobile.git ------demo
-
 https://github.com/vikasbukhari/ONA-OPENNEWSAPP.git
