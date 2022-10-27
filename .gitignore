@@ -4,7 +4,6 @@
 /node_modules
 /.pnp
 .pnp.js
-
 # testing
 /coverage
 
@@ -21,3 +20,11 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Command
+commit.js
+commit.cmd
+commit1.cmd
+commit2.cmd
+commit3.cmd
+commit4.cmd

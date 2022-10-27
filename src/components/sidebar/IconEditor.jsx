@@ -30,7 +30,8 @@ const useStyles = createUseStyles((theme) => ({
   },
   iconItem: {
     width: 50,
-    background: 'white',
+    height: 50,
+    background: '#47aaee',
     marginLeft: 4,
     marginRight: 3,
     marginBottom: 8,
@@ -40,13 +41,16 @@ const useStyles = createUseStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    borderRadius: '100%',
     border: '1px solid white',
     '&:hover': {
       border: '1px solid #47aaee'
     },
     '& img': {
       cursor: 'pointer',
-      maxWidth: '100%'
+      width: 30,
+      filter: 'brightness(0) invert(1)',
+      height: 30,      
     }
   },
   uploader: {

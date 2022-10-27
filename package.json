@@ -25,6 +25,7 @@
     "html-to-image": "^1.9.0",
     "html2canvas": "^1.4.1",
     "measuretool-googlemaps-v3": "^1.0.2",
+    "meow": "^11.0.0",
     "passive-events-support": "^1.0.33",
     "react": "^18.0.0",
     "react-apple-signin-auth": "^1.0.9",
@@ -41,7 +42,8 @@
     "redux-actions": "^2.6.5",
     "redux-persist": "^6.0.0",
     "use-interval": "^1.4.0",
-    "web-vitals": "^2.1.0"
+    "web-vitals": "^2.1.0",
+    "zip-lib": "^0.7.3"
   },
   "scripts": {
     "start": "craco start",

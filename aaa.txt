@@ -1,0 +1,83 @@
+----------------rulls------------------------
+
+service cloud.firestore {
+  match /databases/{db}/documents {
+    function prefix() {
+      return /databases/{db}/documents;
+    }
+    match /chatroom/{roomId} {
+      allow read, write: if request.auth != null && roomId in get(/$(prefix())/users/$(request.auth.uid)).data.chats
+                            || exists(/$(prefix())/admins/$(request.auth.uid));
+    }
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId
+                            || exists(/$(prefix())/admins/$(request.auth.uid));
+    }
+    match /admins/{userId} {
+      allow read, write: if request.auth != null && exists(/$(prefix())/admins/$(request.auth.uid));
+    }
+  }
+}
+
+------------------persistence enable---------------------------------
+
+import { enableIndexedDbPersistence } from "firebase/firestore"; 
+
+enableIndexedDbPersistence(db)
+  .catch((err) => {
+      if (err.code == 'failed-precondition') {
+          // Multiple tabs open, persistence can only be enabled
+          // in one tab at a a time.
+          // ...
+      } else if (err.code == 'unimplemented') {
+          // The current browser does not support all of the
+          // features required to enable persistence
+          // ...
+      }
+  });
+// Subsequent queries will use persistence, if it was enabled successfully
+
+import { initializeFirestore, CACHE_SIZE_UNLIMITED } from "firebase/firestore";
+
+const firestoreDb = initializeFirestore(app, {
+  cacheSizeBytes: CACHE_SIZE_UNLIMITED
+});
+
+
+Dear Sir.
+Very thanks for posting job.
+I'm really interested in your project.
+I have 4+ experiences in PHP, Wordpress, Laravel, and I am full-stack developer as well.
+So I can do it your job for sure in short time.
+I'm a expert in website development field.
+Please check my profile so you will be know more about me.
+I can work Monday-Saturday 8Hrs/Day.
+I'd like to contribute to your project.
+I would appreciate the opportunity to work on your project and I will do my best.
+Thank you for your careful consideration.
+Best Regards.
+
+https://github.com/ReactNativeSchool/react-native-calculator.git
+https://github.com/ReactNativeSchool/react-native-timer.git
+https://github.com/ajhadi/React-Native-Note-App.git
+https://github.com/ryanpedersen42/water-tracker-app.git
+https://github.com/ibelgin/Wallpaper-App.git
+https://github.com/instamobile/recipes-app-react-native.git
+https://github.com/neelk07/react-simple-calendar.git
+https://github.com/ShivamJoker/RN-Music-Player.git
+https://github.com/andresfelipe9619/car-booking-app.git
+https://github.com/anhquan291/e-commerce-app-react-native.git
+https://github.com/itzpradip/react-native-firebase-social-app.git
+https://github.com/cometchat-pro/react-native-chat-app.git
+
+
+
+https://github.com/ReactNativeNews/React-Native-Apps
+
+https://github.com/gitpoint/git-point.git ---------
+
+https://github.com/akveo/kittenTricks.git ---------
+
+https://github.com/TernopilJS/AskApikoMobile.git ------demo
+
+https://github.com/vikasbukhari/ONA-OPENNEWSAPP.git
