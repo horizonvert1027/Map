@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Svg testing</title>
+	<style type="text/css">
+		.filter-green{
+		    width: 50px;
+		    height: 50px;
+		    margin-top: 50%;
+		    margin-left: 50%;
+		    transform: translate(-50%, -50%);
+	        filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+	    }
+	    div {
+		    width: 70px;
+		    height: 70px;
+		    background-color: #1574e1;
+		    border-radius: 100%;
+}
+	    }
+	</style>
+</head>
+<body>
+	<!-- <div>
+		<img src="./icon/komputer.png" class='filter-green'>
+	</div> -->
+	<p id="arr"></p>
+	<script type="text/javascript">
+		var arr1 = [-254299, 267762, -236117, -256993, -200812, -187664, 255316, -252379, -246176, -246988, 243660, -244591, -259808, -278918, -253485, 246960]
+var arr = [-254299, 267762, -236117, -256993, -200812, -187664, 255316, -252379, -246176, -246988, 243660, -244591, -259808, -278918, -253485, 246960, -250243, 249362, 239842, -191500, 259038, -259207, -268153, -262131, 264322, 263570, -275530, 307317, -275732, 271418, 276173]	
+console.log(arr)
+		var arrP = [];
+		var arrN = [];
+		for (var i = 0; i < arr.length; i++) {
+			if (arr[i] > 0) {
+				arrP.push({value: arr[i], index: i});
+			} else {
+				arrN.push({value: arr[i], index: i});
+			}
+		}
+		while (arrN.length && arrP.length) {
+			arrN.sort(function(a, b) {return a.value - b.value});
+			arrP.sort(function(a, b) {return b.value - a.value});
+			var len = arrN.length<arrP.length?arrN.length:arrP.length;
+			for (var i = 0; i < len; i++) {
+				if (arrN[i].value == arrP[i].value) {
+					console.log(arrN[i].value, '~' , arrN[i].index, '-' ,arrP[i].value, '~' , arrP[i].index,  '=', 0)
+					arrP[i].value = 0;
+					arrN[i].value = 0;
+					arr[arrN[i].index] = 0;
+					arr[arrP[i].index] = 0;
+				} else if (arrN[i].value+arrP[i].value < 0) {
+					console.log(arrN[i].value, '~' , arrN[i].index,  '-' ,arrP[i].value, '~' , arrP[i].index,  '=', arrN[i].value+arrP[i].value)
+					arr[arrN[i].index] = arrN[i].value+arrP[i].value;
+					arrN[i].value = arrN[i].value+arrP[i].value;
+					arr[arrP[i].index] = 0;
+					arrP[i].value = 0;
+				} else {
+					console.log(arrP[i].value, '~' , arrP[i].index,  '-' ,arrN[i].value, '~' , arrN[i].index,  '=', arrN[i].value+arrP[i].value)
+					arr[arrP[i].index] = arrN[i].value+arrP[i].value;
+					arrP[i].value = arrN[i].value+arrP[i].value;
+					arr[arrN[i].index] = 0;
+					arrN[i].value = 0;
+				}
+			}
+				arrN = arrN.filter((num)=> (num.value != 0));
+				arrP = arrP.filter((num)=> (num.value != 0));
+			// console.log(arrN, arrP)
+		}
+
+		console.log(arr);
+	</script>
+</body>
+</html>

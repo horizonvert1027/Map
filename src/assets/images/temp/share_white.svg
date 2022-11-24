@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.17" height="16.17" viewBox="0 0 16.17 16.17">
+  <defs>
+    <clipPath id="clip-share_white">
+      <rect width="16.17" height="16.17"/>
+    </clipPath>
+  </defs>
+  <g id="share_white" clip-path="url(#clip-share_white)">
+    <g id="Group_1705" data-name="Group 1705" transform="translate(-908 -451.914)">
+      <g id="share-svgrepo-com" transform="translate(908 451.914)">
+        <g id="Group_1702" data-name="Group 1702">
+          <path id="Path_1144" data-name="Path 1144" d="M13.2,5.119A2.959,2.959,0,0,0,10.839,6.3L5.828,3.746a2.964,2.964,0,1,0-.427.917L10.373,7.2a2.978,2.978,0,0,0,0,1.779L5.4,11.509a3.007,3.007,0,1,0,.427.917l5.012-2.554A2.966,2.966,0,1,0,13.2,5.119ZM2.967,4.924A1.957,1.957,0,1,1,4.924,2.967,1.959,1.959,0,0,1,2.967,4.924Zm0,10.237A1.957,1.957,0,1,1,4.924,13.2,1.959,1.959,0,0,1,2.967,15.161ZM13.2,10.042a1.957,1.957,0,1,1,1.957-1.957A1.959,1.959,0,0,1,13.2,10.042Z" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
