@@ -44,19 +44,6 @@ const firestoreDb = initializeFirestore(app, {
 });
 
 
-Dear Sir.
-Very thanks for posting job.
-I'm really interested in your project.
-I have 4+ experiences in PHP, Wordpress, Laravel, and I am full-stack developer as well.
-So I can do it your job for sure in short time.
-I'm a expert in website development field.
-Please check my profile so you will be know more about me.
-I can work Monday-Saturday 8Hrs/Day.
-I'd like to contribute to your project.
-I would appreciate the opportunity to work on your project and I will do my best.
-Thank you for your careful consideration.
-Best Regards.
-
 https://github.com/ReactNativeSchool/react-native-calculator.git
 https://github.com/ReactNativeSchool/react-native-timer.git
 https://github.com/ajhadi/React-Native-Note-App.git
